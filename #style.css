@@ -68,10 +68,6 @@ section {
     border-radius: 5px;
 }
 
-section #tabela-cores {
-    border-left: none;
-}
-
 h1, h2 {
     color: var(--cor-texto);
 }
