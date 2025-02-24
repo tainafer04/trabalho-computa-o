@@ -37,14 +37,15 @@ body {
 
 
 header {
-    background: var(--cor-cabecalho-fundo);
-    color: var(--cor-cabecalho-texto);
+    background: linear-gradient(90deg, #9f0690, #9500b3);
+    color: white;
     padding: 20px;
-    text-align: center;
-    letter-spacing: 1px;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
-header {
+header h1 {
     color: var(--cor-cabecalho-texto);
 }
 
