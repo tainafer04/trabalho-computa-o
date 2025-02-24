@@ -35,7 +35,7 @@ body {
     color: var(--cor-texto);
 }
 
-/* cabeçalho */
+
 header {
     background: var(--cor-cabecalho-fundo);
     color: var(--cor-cabecalho-texto);
@@ -44,7 +44,7 @@ header {
     letter-spacing: 1px;
 }
 
-header h1 {
+header {
     color: var(--cor-cabecalho-texto);
 }
 
