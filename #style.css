@@ -35,11 +35,15 @@ body {
     color: var(--cor-texto);
 }
 
+header, footer {
+    border: 3px solid var(--cor-borda-secao); /* Adicionando borda */
+    border-radius: 10px;
+    padding: 15px;
+}
 
 header {
     background: linear-gradient(90deg, #9f0690, #9500b3);
     color: white;
-    padding: 20px;
     font-size: 26px;
     font-weight: bold;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
@@ -96,72 +100,6 @@ footer {
 
 footer li {
     list-style-type: none;
-}
-
-/* tabela de cores */
-#preto {
-    background-color: var(--cor-preto);
-    color: var(--cor-branco);
-}
-
-#branco {
-    background-color: var(--cor-branco);
-}
-
-#vermelho {
-    background-color: var(--cor-vermelho);
-}
-
-#verde {
-    background-color: var(--cor-verde);
-}
-
-#azul {
-    background-color: var(--cor-azul);
-    color: var(--cor-branco);
-}
-
-#amarelo {
-    background-color: var(--cor-amarelo);
-}
-
-#ciano {
-    background-color: var(--cor-ciano);
-}
-
-#magenta {
-    background-color: var(--cor-magenta);
-}
-
-#laranja {
-    background-color: var(--cor-laranja);
-}
-
-#roxo-escuro {
-    background-color: var(--cor-roxo-escuro);
-    color: var(--cor-branco);
-}
-
-#azul-claro {
-    background-color: var(--cor-azul-claro);
-}
-
-#verde-musgo {
-    background-color: var(--cor-verde-musgo);
-    color: var(--cor-branco);
-}
-
-#rosa-claro {
-    background-color: var(--cor-rosa-claro);
-}
-
-#cinza-medio {
-    background-color: var(--cor-cinza-medio);
-}
-
-#marrom-avermelhado {
-    background-color: var(--cor-marrom-avermelhado);
-    color: var(--cor-branco);
 }
 
 /* responsividade */
