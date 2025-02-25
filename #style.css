@@ -1,5 +1,5 @@
- /* variáveis de cores */
- :root {
+/* Variáveis de cores */
+:root {
     --cor-fundo: #f4f4f4;
     --cor-texto: #333;
     --cor-cabecalho-fundo: #701741;
@@ -9,23 +9,24 @@
     --cor-secao-fundo: #fafafa;
     --cor-rodape-fundo: #701741;
     --cor-rodape-texto: #fff;
-    --cor-preto: rgb(0, 0, 0);
-    --cor-branco: rgb(255, 255, 255);
-    --cor-vermelho: rgb(255, 0, 0);
-    --cor-verde: rgb(0, 255, 0);
-    --cor-azul: rgb(0, 0, 255);
-    --cor-amarelo: rgb(255, 255, 0);
-    --cor-ciano: rgb(0, 255, 255);
-    --cor-magenta: rgb(255, 0, 255);
-    --cor-laranja: rgb(255, 165, 0);
-    --cor-roxo-escuro: rgb(128, 0, 128);
-    --cor-azul-claro: rgb(135, 206, 250);
-    --cor-verde-musgo: rgb(85, 107, 47);
-    --cor-rosa-claro: rgb(255, 182, 193);
-    --cor-cinza-medio: rgb(169, 169, 169);
-    --cor-marrom-avermelhado: rgb(139, 69, 19);
+    --cor-preto: #000;
+    --cor-branco: #fff;
+    --cor-vermelho: #ff0000;
+    --cor-verde: #00ff00;
+    --cor-azul: #0000ff;
+    --cor-amarelo: #ffff00;
+    --cor-ciano: #00ffff;
+    --cor-magenta: #ff00ff;
+    --cor-laranja: #ffa500;
+    --cor-roxo-escuro: #800080;
+    --cor-azul-claro: #87cefa;
+    --cor-verde-musgo: #556b2f;
+    --cor-rosa-claro: #ffb6c1;
+    --cor-cinza-medio: #a9a9a9;
+    --cor-marrom-avermelhado: #8b4513;
 }
 
+/* Configurações gerais */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -35,10 +36,10 @@ body {
     color: var(--cor-texto);
 }
 
-
+/* Cabeçalho */
 header {
-    background: linear-gradient(90deg, #9f0690, #9500b3);
-    color: white;
+    background: var(--cor-cabecalho-fundo);
+    color: var(--cor-cabecalho-texto);
     padding: 20px;
     font-size: 26px;
     font-weight: bold;
@@ -46,28 +47,32 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-
-/* conteúdo principal */
+/* Conteúdo principal */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* seções */
 section {
     width: 100%;
     max-width: 800px;
-}
-
-section #tabela-cores {
-    border-left: none;
+    padding: 20px;
+    background-color: var(--cor-secao-fundo);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 h1, h2 {
     color: var(--cor-texto);
+    text-align: center;
 }
 
 img {
@@ -78,7 +83,11 @@ img {
     border-radius: 5px;
 }
 
-/* rodapé */
+ul {
+    padding-left: 20px;
+}
+
+/* Rodapé */
 footer {
     background: var(--cor-rodape-fundo);
     color: var(--cor-rodape-texto);
@@ -90,8 +99,7 @@ footer {
     align-items: center;
 }
 
-
-/* tabela de cores */
+/* Tabela de cores */
 #preto {
     background-color: var(--cor-preto);
     color: var(--cor-branco);
@@ -116,6 +124,7 @@ footer {
 
 #amarelo {
     background-color: var(--cor-amarelo);
+    color: var(--cor-preto);
 }
 
 #ciano {
@@ -157,39 +166,36 @@ footer {
     color: var(--cor-branco);
 }
 
-/* responsividade */
+/* Responsividade */
 @media (max-width: 600px) {
     main {
         width: 95%;
         padding: 15px;
     }
+    
+    h1 {
+        font-size: 22px;
+    }
 
     section {
         padding: 10px;
     }
-    .cabecalho {
-        background-color: red;
-        color: white;
+    
+    .cabecalho, .rodape {
+        background-color: var(--cor-vermelho);
+        color: var(--cor-branco);
         text-align: center;
         padding: 20px;
-    }
-    
-    .rodape {
-        background-color: red;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        margin-top: 20px;
     }
     
     .conteudo-central {
-        background-color: red;
+        background-color: var(--cor-vermelho);
         padding: 20px;
         margin: 20px auto;
         width: 80%;
+        max-width: 500px;
         border-radius: 8px;
         text-align: center;
-        color: white;
+        color: var(--cor-branco);
     }
-
 }
