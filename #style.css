@@ -175,4 +175,29 @@ footer li {
     section {
         padding: 10px;
     }
+    .cabecalho {
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .rodape {
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    .conteudo-central {
+        background-color: red;
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        border-radius: 8px;
+        text-align: center;
+        color: white;
+    }
+
 }
